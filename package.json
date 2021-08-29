@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:win": "(if exist ..\\user-list-back\\front rmdir ..\\user-list-back\\front /s /q) && ng build --configuration production && move dist/user-list-front ..\\user-list-back\\front",
-    "build:mac": "rm -rf ../user-list-back/front && mkdir ../user-list-back/front && ng build --configuration production && mv dist/user-list-front/* ../user-list-back/front/"
+    "build:win": "(if exist ..\\highscore-server\\client rmdir ..\\highscore-server\\client /s /q) && ng build --configuration production && move dist\\highscore-front ..\\highscore-server\\client",
+    "build:mac": "rm -rf ../highscore-server/client && mkdir ../highscore-server/client && ng build --configuration production && mv dist/highscore-front/* ../highscore-server/client/"
   },
   "private": true,
   "dependencies": {
