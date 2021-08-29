@@ -1,0 +1,14 @@
+<div style="display: grid; place-items: center; height: 100vh; background-color: lightskyblue;">
+    <div>
+        <div style="text-align: center;">BitByteBytes</div>
+        <div [formGroup]="nameForm">
+            <input type="text" formControlName="name" />
+        </div>
+        <div style="text-align: center; cursor: pointer;" (click)="next()">clickme</div>
+
+        <div *ngIf="name" [formGroup]="wordForm">
+            <input type="text" formControlName="word" />
+        </div>
+        <div *ngIf="name" style="text-align: center; cursor: pointer;" (click)="nextnext()">clickme</div>
+    </div>
+</div>
