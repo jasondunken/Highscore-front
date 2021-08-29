@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:win": "(if exist ..\\user-list-back\\front rmdir ..\\user-list-back\\front /s /q) && ng build --prod && move dist/user-list-front ..\\user-list-back\\front",
+    "build:mac": "rm -rf ../user-list-back/front && mkdir ../user-list-back/front && ng build --prod && mv dist/user-list-front/* ../user-list-back/front/"
   },
   "private": true,
   "dependencies": {
